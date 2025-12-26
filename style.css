@@ -23,6 +23,28 @@ body {
 
 h1, h2, h3 { font-family: 'Poppins', sans-serif; line-height: 1.2; }
 
+/* Main page headline */
+h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+/* Section titles */
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+/* Card titles */
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
 .container { max-width: 1200px; margin: auto; padding: 0 20px; }
 
 /* NAVBAR */
@@ -90,18 +112,19 @@ h1, h2, h3 { font-family: 'Poppins', sans-serif; line-height: 1.2; }
 .info-card,
 .highlight-card,
 .program-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2.2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* Hover lift effect */
 .info-card:hover,
 .highlight-card:hover,
 .program-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
 /* 2. Gap at the very top (between 'Why Choose This Program' and its subtitle) */
@@ -114,21 +137,31 @@ h1, h2, h3 { font-family: 'Poppins', sans-serif; line-height: 1.2; }
   margin-bottom: 30px;
 }
 
-.program-card.highlight { border: 2px solid var(--primary); }
-
-.btn {
-  display: inline-block;
-  padding: 0.9rem 1.6rem;
-  border-radius: 999px;
-  font-weight: 600;
-  background: #2563eb;
-  color: #fff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4b5563; /* soft gray */
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(37,99,235,0.35);
+.program-card.highlight { border: 2px solid var(--primary); }
+
+
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.btn-secondary:hover {
+  background: #2563eb;
+  color: #fff;
 }
 
 
